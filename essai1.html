@@ -14,9 +14,12 @@
         }
 
         .container {
-            max-width: 300px;
+            max-width: 400px;
             margin: 50px auto;
             padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .logo {
@@ -30,6 +33,26 @@
             font-weight: bold;
         }
 
+        /* New class for the h1 title */
+        .name-title {
+            color: #333; /* Default color */
+            transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+            animation: pulse 2s infinite; /* Apply the pulse animation */
+        }
+
+        /* Hover effect for the h1 title */
+        .name-title:hover {
+            color: #0077b5; /* Change color on hover (e.g., LinkedIn blue) */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+        }
+
+        /* Pulse animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
         .title {
             font-size: 16px;
             color: gray;
@@ -40,34 +63,36 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            margin-top: 20px;
         }
 
         .social-links img {
             width: 60px;
             height: 60px;
+            border-radius: 10px;
             transition: transform 0.3s;
         }
 
         .social-links img:hover {
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="MechatroniX wbg.png" alt="MechatroniX Logo" class="logo">
-        <h1>BOUREKBA ACHRAF</h1>
+        <h1 class="name-title">BOUREKBA ACHRAF</h1> <!-- Added class here -->
         <p class="title">Responsable technique</p>
         
         <div class="social-links">
-            <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
-                <img src="whatsapp.png" alt="WhatsApp">
+            <a href="https://wa.me/212657834586" target="_blank">
+                <img src="watslogo.png" alt="WhatsApp">
             </a>
             <a href="https://www.linkedin.com/in/achraf-bourekba-2913952a0" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn">
+                <img src="linkedinlogo.png" alt="LinkedIn">
             </a>
             <a href="https://www.instagram.com/ac.h77raf" target="_blank">
-                <img src="instagram.png" alt="Instagram">
+                <img src="instalogo.png" alt="Instagram">
             </a>
         </div>
     </div>
